@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Scheduler</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">	
+
+
+</head>
+<body background="assets/images/train.jpg">
+	<nav class="navbar navbar-default" style="background:grey">
+  		<div class="container">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<a class="navbar-brand" style="background:lightblue; color:black">All Aboard!!</a>
+      			<!-- <button type="button" id="start" class="btn btn-success">Start Game</button> -->
+
+ 			
+    		</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      			<ul class="nav navbar-nav navbar-right">
+      			</ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>	
+
+<div class="container" id="wrapper">
+	<div class="row">
+		<div class="col-xs-12" style="background:white" id="main-body">
+			<div class="page-header">
+  				<h3 style="color:#4aaaa5">Train Schedule</h3>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12" id="train-table" style="background:white">
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Train Name</th>
+								<th>Destination</th>
+								<th>Frequency (Minutes)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+							</tr>
+						</thead>
+						<tbody id="train-table-body">
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel panel-default" id="trains-div">
+  				<div class="panel-heading">
+    				<h3 class="panel-title" style="color:##4aaaa5">Add a train</h3>
+
+   				
+  				</div>
+  				<div class="panel-body">
+
+					<form>
+  						<div class="form-group">
+    						<label for="trainName">Train Name</label>
+    						<input type="text" class="form-control" id="trainName" placeholder="Train Name">
+  						</div>
+
+  						<div class="form-group">
+    						<label for="destination">Destination</label>
+    						<input type="text" class="form-control" id="destination" placeholder="Destination">
+  						</div>
+
+  						<div class="form-group">
+    						<label for="startTime">First Train Time HH:mm - Military Time</label>
+    						<input type="text" class="form-control" id="startTime" placeholder="09:00">
+  						</div>
+
+  						<div class="form-group">
+    						<label for="frequency">Frequency (min)</label>
+    						<input type="text" class="form-control" id="frequency" placeholder="Frequency">
+  						</div>  						
+
+  						
+  						<button type="submit" class="btn">Submit</button>
+					</form>
+
+  				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="push"></div>
+</div>
+
+
+<footer>
+		&copy;Copyright 2017 Vadim Gelman
+</footer>	
+
+
+
+
+	<!-- JAVASCRIPT  -->
+	<!-- ========================================= -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script  type='text/javascript' src='assets/javascript/train.js'></script>		
+
+	<!-- Added Moment JS -->
+  	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	
+</body>
+</html>
