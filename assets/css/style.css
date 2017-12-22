@@ -20,6 +20,11 @@ html, body {
   background-color: #4aaaa5;
 }
 
+.panel-title{
+  color:grey;
+  font-weight: 700;
+}
+
 #display {
   font-family: monospace;
   font-size: 40px;
